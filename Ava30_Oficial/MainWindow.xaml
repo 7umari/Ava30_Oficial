@@ -1,0 +1,50 @@
+﻿<Window x:Class="Ava30_Oficial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ava30_Oficial"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="39*"/>
+            <ColumnDefinition Width="761*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="584" VerticalAlignment="Center" Width="800                " Source="/frame1.png" RenderTransformOrigin="0.5,0.5" Stretch="Fill" Grid.ColumnSpan="2">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+
+
+        <Frame Content="Jogo dos 7 Erros" ScrollViewer.VerticalScrollBarVisibility="Hidden" ScrollViewer.HorizontalScrollBarVisibility="Hidden" Visibility="Visible" NavigationUIVisibility="Automatic" FontSize="24" Padding="17,15,10,10" Margin="-4,0,4,0" BorderThickness="0,0,0,0" Foreground="Black" Grid.ColumnSpan="2"/>
+
+
+        <Border x:Name="imgLinha" BorderBrush="Black" BorderThickness="6,6,6,6" Margin="-13,297,-3,283" Grid.ColumnSpan="2"/>
+        <Image x:Name="imagemCerta" HorizontalAlignment="Left" Height="224" Margin="182,35,0,0" VerticalAlignment="Top" Width="358" Source="/imgCertaOf.png" Grid.Column="1"/>
+        <Image x:Name="imagemErrada" HorizontalAlignment="Left" Height="224" Margin="182,331,0,0" VerticalAlignment="Top" Width="368                " Source="/imgErradaOf.png" Grid.Column="1"/>
+        <Image x:Name="imagem1" HorizontalAlignment="Left" Height="46" Margin="262,394,0,0" VerticalAlignment="Top" Width="48" MouseLeftButtonDown="erro1" Source="/png].png" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="img1" HorizontalAlignment="Left" Height="20" Margin="277,392,0,0" VerticalAlignment="Top" Width="18" Source="/check.png" Visibility="Hidden" Grid.Column="1"/>
+        <Image x:Name="imagem2" HorizontalAlignment="Left" Height="60" Margin="357,378,0,0" VerticalAlignment="Top" Width="27" Source="/png].png" MouseLeftButtonDown="erro2" Stretch="Fill" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="877,408,0,0" VerticalAlignment="Top" Width="100" Grid.Column="1"/>
+        <Image x:Name="img2" HorizontalAlignment="Left" Height="27" Margin="357,374,0,0" VerticalAlignment="Top" Width="21" Source="/check.png" Visibility="Hidden" Grid.Column="1"/>
+        <Image x:Name="imagem3" HorizontalAlignment="Left" Height="60" Margin="411,367,0,0" VerticalAlignment="Top" Width="27" Source="/png].png" MouseLeftButtonDown="erro3" Visibility="Visible" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="img3" HorizontalAlignment="Left" Height="18" Margin="411,392,0,0" VerticalAlignment="Top" Width="27" Source="/check.png" Visibility="Hidden" Grid.Column="1"/>
+        <Image x:Name="imagem4" HorizontalAlignment="Left" Height="50" Margin="465,378,0,0" VerticalAlignment="Top" Width="60" Source="/png].png" MouseLeftButtonDown="erro4" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="imagem5" HorizontalAlignment="Left" Height="59" Margin="262,472,0,0" VerticalAlignment="Top" Width="53" MouseLeftButtonDown="erro5" Stretch="Fill" Source="/png].png" Grid.Column="1"/>
+        <Image x:Name="img5" HorizontalAlignment="Left" Height="34" Margin="274,497,0,0" VerticalAlignment="Top" Width="24" Source="/check.png" Visibility="Hidden" Grid.Column="1"/>
+        <Image x:Name="img4" HorizontalAlignment="Left" Height="27" Margin="484,397,0,0" VerticalAlignment="Top" Width="22" Source="/check.png" Visibility="Hidden" Grid.Column="1"/>
+        <Image x:Name="imagem6" HorizontalAlignment="Left" Height="37" Margin="340,488,0,0" VerticalAlignment="Top" Width="53" Source="/png].png" MouseLeftButtonDown="erro6" StretchDirection="Both" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="img6" HorizontalAlignment="Left" Height="18" Margin="348,488,0,0" VerticalAlignment="Top" Width="21" Source="/check.png" Visibility="Hidden" Grid.Column="1"/>
+        <Image x:Name="imagem7" HorizontalAlignment="Left" Height="95" Margin="460,433,0,0" VerticalAlignment="Top" Width="49" Source="/png].png" MouseLeftButtonDown="erro7" Stretch="Fill" Grid.Column="1"/>
+        <Image x:Name="img7" HorizontalAlignment="Left" Height="28" Margin="470,476,0,0" VerticalAlignment="Top" Width="25" Source="/check.png" Visibility="Hidden" Grid.Column="1"/>
+
+
+    </Grid>
+</Window>

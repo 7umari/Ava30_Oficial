@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="check.png" />
+    <None Remove="frame of.png" />
+    <None Remove="frame1.png" />
+    <None Remove="imgCertaOf.png" />
+    <None Remove="imgErradaOf.png" />
+    <None Remove="linha.png" />
+    <None Remove="png].png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="check.png" />
+    <Resource Include="frame of.png" />
+    <Resource Include="frame1.png" />
+    <Resource Include="imgCertaOf.png" />
+    <Resource Include="imgErradaOf.png" />
+    <Resource Include="linha.png" />
+    <Resource Include="png].png" />
+  </ItemGroup>
+
+</Project>
